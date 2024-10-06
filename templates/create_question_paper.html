@@ -11,8 +11,8 @@
     <form method="POST">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit">Create Paper</button>
-        <button type="button">Add Questions</button>
+        <button type="submit" name="action" value="create_paper">Create Paper</button>
+        <button type="submit" name="action" value="add_questions">Add Questions</button>
     </form>
 </body>
 </html>

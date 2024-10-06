@@ -18,40 +18,6 @@
             <h3>{{ question.OptionD }}</h3>
         {% endfor %}
     </div>
-
-
-    <!-- <table border="1">
-        <thead>
-            <tr>
-                <th>S. No</th>
-                <th>Topic</th>
-                <th>Sub Topic</th>
-                <th>Difficulty Level</th>
-                <th>Question</th>
-                <th>Option A</th>
-                <th>Option B</th>
-                <th>Option C</th>
-                <th>Option D</th>
-                <th>Answer</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for question in questions %}
-            <tr>
-                <td>{{ question.id }}</td>
-                <td>{{ question.Topic }}</td>
-                <td>{{ question.Sub_Topic }}</td>
-                <td>{{ question.Level }}</td>
-                <td>{{ question.Question }}</td>
-                <td>{{ question.OptionsA }}</td>
-                <td>{{ question.OptionB }}</td>
-                <td>{{ question.OptionC }}</td>
-                <td>{{ question.OptionD }}</td>
-                <td>{{ question.Answer }}</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table> -->
     <a href=""{% url 'create_question_paper' %}">Back to Filter</a>
 </body>
 </html>
