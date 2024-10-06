@@ -1,0 +1,18 @@
+<!-- create_question_paper.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Question Paper</title>
+</head>
+<body>
+    <h1>Create a Question Paper</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Create Paper</button>
+        <button type="button">Add Questions</button>
+    </form>
+</body>
+</html>
